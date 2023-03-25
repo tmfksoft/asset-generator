@@ -73,7 +73,7 @@ class AssetGenerator {
     generateAll(manifestPath, sourceDir, destinationDir, options) {
         return __awaiter(this, void 0, void 0, function* () {
             const assetList = yield this.generateFileList(sourceDir);
-            if (!fs.existsSync(manifestPath) && !options.overwrite) {
+            if (fs.existsSync(manifestPath) && !options.overwrite) {
                 throw new Error("Manifest file already exists!");
             }
             fs.writeFileSync(manifestPath, JSON.stringify(assetList));

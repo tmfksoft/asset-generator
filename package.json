@@ -1,6 +1,6 @@
 {
   "name": "@majesticfudgie/asset-generator",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "main": "runner.js",
   "bin": {
     "asset-generator": "./runner.js"
