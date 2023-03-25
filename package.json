@@ -1,5 +1,5 @@
 {
-  "name": "asset-generator",
+  "name": "@majesticfudgie/asset-generator",
   "version": "1.0.0",
   "main": "build/index.js",
   "bin": "build/index.js",
