@@ -1,0 +1,17 @@
+{
+  "name": "asset-generator",
+  "version": "1.0.0",
+  "main": "build/index.js",
+  "bin": "build/index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "node ."
+  },
+  "dependencies": {
+    "commander": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.9"
+  }
+}
