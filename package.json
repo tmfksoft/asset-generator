@@ -2,6 +2,9 @@
   "name": "@majesticfudgie/asset-generator",
   "version": "1.0.6",
   "main": "runner.js",
+  "repository": {
+    "url": "https://github.com/tmfksoft/asset-generator"
+  },
   "bin": {
     "asset-generator": "./runner.js"
   },
