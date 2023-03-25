@@ -11,7 +11,7 @@ class AssetGenerator {
 		this.program
 			.name("asset-generator")
 			.description("Generates an asset manifest and duplicates a folder structure into an uploadable one.")
-			.version("1.0.0")
+			.version("1.0.5")
 
 		this.program
 			.command("generate-manifest")

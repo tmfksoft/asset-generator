@@ -1,8 +1,11 @@
 {
   "name": "@majesticfudgie/asset-generator",
-  "version": "1.0.0",
-  "main": "build/index.js",
-  "bin": "build/index.js",
+  "version": "1.0.5",
+  "main": "runner.js",
+  "bin": {
+    "asset-generator": "./runner.js"
+  },
+  "private": false,
   "license": "MIT",
   "scripts": {
     "build": "tsc",
