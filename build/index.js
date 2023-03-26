@@ -137,10 +137,10 @@ class AssetGenerator {
             const fileList = [];
             const directoryContents = fs.readdirSync(sourceDir);
             for (let element of directoryContents) {
-                const fullPath = path_1.default.join(sourceDir, element);
+                const fullPath = path_1.default.posix.join(sourceDir, element);
                 const stat = fs.statSync(fullPath);
                 if (stat.isDirectory()) {
-                    const recursedFiles = yield this.generateFileList(fullPath, path_1.default.join(directoryPrefix, element));
+                    const recursedFiles = yield this.generateFileList(fullPath, path_1.default.posix.join(directoryPrefix, element));
                     for (let f of recursedFiles) {
                         fileList.push(f);
                     }
@@ -148,7 +148,7 @@ class AssetGenerator {
                 }
                 const hash = yield this.generateHash(fullPath);
                 fileList.push({
-                    path: path_1.default.join(directoryPrefix, element),
+                    path: path_1.default.posix.join(directoryPrefix, element),
                     hash,
                     size: stat.size
                 });

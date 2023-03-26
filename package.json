@@ -1,6 +1,6 @@
 {
   "name": "@majesticfudgie/asset-generator",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "main": "runner.js",
   "repository": {
     "url": "https://github.com/tmfksoft/asset-generator"
